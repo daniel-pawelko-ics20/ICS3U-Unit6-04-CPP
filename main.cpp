@@ -12,7 +12,7 @@ using std::cout;
 using std::endl;
 using std::cin;
 
-void average(int **arr, int rows, int colm) {
+float average(int **arr, int rows, int colm) {
     // defining total variable
     float total = 0;
 
@@ -24,6 +24,7 @@ void average(int **arr, int rows, int colm) {
         cout << endl;
     }
 
+    return total/(rows*colm);
     cout << "\nAverage is " << total/(rows*colm) << endl;
 }
 
@@ -63,7 +64,8 @@ int main() {
     }
 
     // calling function/process/output
-    average(arr, rows, colm);
+    float av = average(arr, rows, colm);
+    cout << "\nAverage is " << av << endl;
 
     // output finished
     cout << endl;
