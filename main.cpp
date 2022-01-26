@@ -24,8 +24,8 @@ float average(int **arr, int rows, int colm) {
         cout << endl;
     }
 
+    // return average
     return total/(rows*colm);
-    cout << "\nAverage is " << total/(rows*colm) << endl;
 }
 
 int main() {
